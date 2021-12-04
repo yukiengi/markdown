@@ -23,6 +23,7 @@ module MarkdownSample
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 6.1
+    config.autoload_paths << Rails.root.join("lib/autoloads")
 
     # Configuration for the application, engines, and railties goes here.
     #
